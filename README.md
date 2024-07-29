@@ -14,7 +14,7 @@ Follow my Github: https://github.com/jpwaters09
    
 2. Install required python packages: \
    For Windows:
-   ```batch
+   ```
    pip install pyqt5 pillow pyinstaller
    ```
 
@@ -26,7 +26,7 @@ Follow my Github: https://github.com/jpwaters09
    ```
 
 4. Build the application: \
-   For Windows
+   For Windows:
    ```batch
    ./Compile.bat
    ```
