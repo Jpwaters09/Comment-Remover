@@ -21,7 +21,8 @@ Follow my Github: https://github.com/jpwaters09
    ```
 
 3. Clone the repository: \
-   For Windows and Linux:
-   ```
-   git clone 
+   For Windows:
+   ```batch
+   git clone https://github.com/Jpwaters09/Comment-Remover.git
+   cd Comment-Remover/Windows/Build
    ```
