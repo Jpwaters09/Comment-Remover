@@ -14,7 +14,7 @@ Follow my Github: https://github.com/jpwaters09
    For Windows (32-Bit): [Python 3.12.3](https://www.python.org/ftp/python/3.12.3/python-3.12.3.exe) \
    For Linux: [Python 3.12.3](https://www.python.org/ftp/python/3.12.3/Python-3.12.3.tgz)
    
-2. Install required python packages:
+2. Install required python packages: \
    For Windows:
    ```batch
    pip install pyqt5
