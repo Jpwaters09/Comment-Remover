@@ -26,3 +26,9 @@ Follow my Github: https://github.com/jpwaters09
    git clone https://github.com/Jpwaters09/Comment-Remover.git
    cd Comment-Remover/Windows/Build
    ```
+
+4. Build the application: \
+   For Windows
+   ```batch
+   ./Compile.bat
+   ```
