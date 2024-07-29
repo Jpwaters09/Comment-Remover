@@ -19,4 +19,5 @@ Follow my Github: https://github.com/jpwaters09
    ```batch
    pip install pyqt5
    pip install pillow
+   del
    ```
