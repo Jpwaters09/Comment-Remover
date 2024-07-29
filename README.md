@@ -17,7 +17,7 @@ Follow my Github: https://github.com/jpwaters09
 2. Install required python packages: \
    For Windows:
    ```batch
-   pip install pyqt5 pillow
+   pip install pyqt5 pillow pyinstaller
    ```
 
 3. Clone the repository: \
