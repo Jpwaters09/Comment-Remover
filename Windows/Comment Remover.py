@@ -1,4 +1,11 @@
-# Comment Remover
+################################################
+## Comment Remover                            ##
+## Language: Python                           ##
+## Author: Jacob Waters                       ##
+## Github: github.com/jpwaters09              ##
+## Copyright (c) 2024 Jacob Waters            ##
+## Contact me: jpwaters.github@gmail.com      ##
+################################################
 
 from PyQt5.QtWidgets import QApplication, QPushButton, QWidget, QLabel, QComboBox, QFileDialog, QLineEdit, QProgressBar
 from PyQt5.QtGui import QIcon, QPixmap, QImage
