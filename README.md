@@ -19,3 +19,9 @@ Follow my Github: https://github.com/jpwaters09
    ```batch
    pip install pyqt5 pillow
    ```
+
+3. Clone the repository: \
+   For Windows and Linux:
+   ```
+   git clone 
+   ```
