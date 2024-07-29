@@ -18,4 +18,5 @@ Follow my Github: https://github.com/jpwaters09
    For Windows:
    ```batch
    pip install pyqt5
+   pip install pillow
    ```
