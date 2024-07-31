@@ -64,12 +64,12 @@ Follow my Github: https://github.com/jpwaters09
    Double click on the Comment_Remover-Windows.exe file. \
    Or run in cmd:
    ```batch
-   ./"dist/Comment Remover.exe"
+   ./"dist/Comment_Remover-Windows.exe"
    ```
 
    For Ubuntu / Debian Linux: \
    Double click on the file. \
    Or run in terminal:
    ```bash
-   ./"dist/Comment Remover.exe"
+   ./"dist/Comment_Remover-Linux"
    ```
