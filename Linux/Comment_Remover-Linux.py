@@ -1,5 +1,5 @@
 ################################################
-## Comment Remover - Linux                    ##
+## Comment Remover v1.0.0 - Linux             ##
 ## Language: Python                           ##
 ## Author: Jacob Waters                       ##
 ## Github: github.com/jpwaters09              ##
