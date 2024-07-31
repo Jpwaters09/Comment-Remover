@@ -14,10 +14,17 @@ Follow my Github: https://github.com/jpwaters09
 - [Raspberry Pi Projects](https://github.com/Jpwaters09/Raspberry-Pi-Projects)
 
 # Download:
-
+## v1.1.0:
 Release v1.1.0 (latest): [v1.1.0](https://github.com/Jpwaters09/Comment-Remover/releases/tag/v1.1.0)
 
-Download the .exe: [Comment Remover.exe](https://github.com/Jpwaters09/Comment-Remover/releases/download/v1.0.0/Comment_Remover.exe) \
+Download the .exe: [Comment_Remover.exe](https://github.com/Jpwaters09/Comment-Remover/releases/download/v1.1.0/Comment_Remover.exe) \
+Download the source code (zip): [Source code.zip](https://github.com/Jpwaters09/Comment-Remover/archive/refs/tags/v1.1.0.zip) \
+Download the source code (tar.gz): [Source code.tar.gz](https://github.com/Jpwaters09/Comment-Remover/archive/refs/tags/v1.1.0.tar.gz)
+
+## v1.0.0:
+Release v1.0.0: [v1.0.0](https://github.com/Jpwaters09/Comment-Remover/releases/tag/v1.0.0)
+
+Download the .exe: [Comment_Remover.exe](https://github.com/Jpwaters09/Comment-Remover/releases/download/v1.0.0/Comment_Remover.exe) \
 Download the source code (zip): [Source code.zip](https://github.com/Jpwaters09/Comment-Remover/archive/refs/tags/v1.0.0.zip) \
 Download the source code (tar.gz): [Source code.tar.gz](https://github.com/Jpwaters09/Comment-Remover/archive/refs/tags/v1.0.0.tar.gz)
 
