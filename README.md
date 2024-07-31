@@ -1,5 +1,5 @@
-# Comment-Remover
-Removes comments from multiple coding languages.
+# Comment Remover
+Removes comments from Python, JavaScript, C, C++, Lua, and Asm.
 ---
 Hi I'm Jacob,
 Follow me for coding Tutorials / Projects.\
