@@ -1,5 +1,5 @@
 ################################################
-## Comment Remover - Windows                  ##
+## Comment Remover v1.0.0 - Windows           ##
 ## Language: Python                           ##
 ## Author: Jacob Waters                       ##
 ## Github: github.com/jpwaters09              ##
