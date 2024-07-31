@@ -20,29 +20,56 @@ Follow my Github: https://github.com/jpwaters09
    For Linux: [Python 3.12.3](https://www.python.org/ftp/python/3.12.3/Python-3.12.3.tgz)
    
 2. Install required python packages: \
-   For Windows:
+   For Windows open the terminal by typing 'cmd' in the Windows search and clicking enter:
    ```
    pip install pyqt5 pillow pyinstaller
+   ```
+
+   For Ubuntu / Debian Linux open the terminal by typing 'terminal' in the search:
+   ```bash
+   sudo apt update
+   sudo apt install python3-pip -y
+   pip install pyqt5 pyinstaller
    ```
 
 4. Clone the repository: \
    For Windows: \
    Download the code: [Comment Remover](https://github.com/Jpwaters09/Comment-Remover/archive/refs/heads/main.zip). \
-   Unzip the file. 
+   Unzip the file, then in cmd run:
    ```batch
-   cd "Comment-Remover-main\Comment-Remover-main\Windows\Build"
+   cd "Comment-Remover-main\Comment-Remover-main\Windows"
+   ```
+
+   For Ubuntu / Debian Linux: \
+   Download the code: [Comment Remover](https://github.com/Jpwaters09/Comment-Remover/archive/refs/heads/main.zip). \
+   Unzip the file, then in terminal run:
+   ```batch
+   cd "Comment-Remover-main\Comment-Remover-main\Linux"
    ```
 
 5. Build the application: \
-   For Windows:
+   For Windows, in cmd:
    ```batch
    ./Compile.bat
    ```
+   
+   For Ubuntu / Debian Linux, in terminal:
+   ```batch
+   chmod +x Compile.sh
+   ./Compile.sh
+   ```
 
 6. Running the application: \
-   For windows: \
-   Double click on the .exe file. \
-   Or run:
+   For Windows: \
+   Double click on the Comment_Remover-Windows.exe file. \
+   Or run in cmd:
+   ```batch
+   ./"dist/Comment Remover.exe"
+   ```
+
+   For Ubuntu / Debian Linux: \
+   Double click on the file. \
+   Or run in terminal:
    ```batch
    ./"dist/Comment Remover.exe"
    ```
