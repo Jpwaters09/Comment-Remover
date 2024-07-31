@@ -1,5 +1,5 @@
 # Comment Remover
-Removes comments from Python, JavaScript, C, C++, Lua, and Asm.
+Removes comments from Python, JavaScript, Java C, C++, C#, Lua, and Asm.
 ---
 Hi I'm Jacob,
 Follow me for coding Tutorials / Projects.\
@@ -15,7 +15,7 @@ Follow my Github: https://github.com/jpwaters09
 
 # Download:
 
-Release v1.0.0 (latest): [v1.0.0](https://github.com/Jpwaters09/Comment-Remover/releases/tag/v1.0.0)
+Release v1.1.0 (latest): [v1.1.0](https://github.com/Jpwaters09/Comment-Remover/releases/tag/v1.1.0)
 
 Download the .exe: [Comment Remover.exe](https://github.com/Jpwaters09/Comment-Remover/releases/download/v1.0.0/Comment_Remover.exe) \
 Download the source code (zip): [Source code.zip](https://github.com/Jpwaters09/Comment-Remover/archive/refs/tags/v1.0.0.zip) \
