@@ -1,7 +1,7 @@
 # Comment Remover
-Removes comments from Python, JavaScript, Java, C, C++, C#, Lua, and Asm.
+Removes comments from Python, JavaScript, C, C++, Lua, and Asm.
 ---
-Hi I'm Jacob,
+Hi, I'm Jacob,
 Follow me for coding Tutorials / Projects.\
 If you have any project ideas or suggestions please contact me at jpwaters.github@gmail.com \
 Follow my Github: https://github.com/jpwaters09
@@ -57,12 +57,12 @@ Follow my Github: https://github.com/jpwaters09
    Double click on the Comment_Remover-Windows.exe file. \
    Or run in cmd:
    ```batch
-   ./"dist/Comment_Remover-Windows.exe"
+   ./"dist/Comment_Remover-v1.0.0-Windows.exe"
    ```
 
    For Ubuntu / Debian Linux: \
    Double click on the file. \
    Or run in terminal:
    ```bash
-   ./"dist/Comment_Remover-Linux"
+   ./"dist/Comment_Remover-v1.0.0-Linux"
    ```
