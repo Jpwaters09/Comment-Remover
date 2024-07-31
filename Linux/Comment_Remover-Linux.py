@@ -11,7 +11,6 @@ from PyQt5.QtWidgets import QApplication, QPushButton, QWidget, QLabel, QComboBo
 import sys
 from ctypes.wintypes import *
 
-
 class Window(QWidget):
     def __init__(self):
         super().__init__()
