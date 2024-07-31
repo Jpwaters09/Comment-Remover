@@ -6,6 +6,13 @@ Follow me for coding Tutorials / Projects.\
 If you have any project ideas or suggestions please contact me at jpwaters.github@gmail.com \
 Follow my Github: https://github.com/jpwaters09
 
+## Repositories:
+- [Comment Remover](https://github.com/Jpwaters09/Comment-Remover)
+- [C++ Projects](https://github.com/Jpwaters09/CPP-Projects)
+- [HTML Projects](https://github.com/Jpwaters09/HTML-Projects)
+- [Python Projects](https://github.com/Jpwaters09/Python-Projects)
+- [Raspberry Pi Projects](https://github.com/Jpwaters09/Raspberry-Pi-Projects)
+
 # Download:
 
 Release v1.0.0 (latest): [v1.0.0](https://github.com/Jpwaters09/Comment-Remover/releases/tag/v1.0.0)
