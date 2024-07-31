@@ -21,7 +21,7 @@ Follow my Github: https://github.com/jpwaters09
    
 2. Install required python packages: \
    For Windows open the terminal by typing 'cmd' in the Windows search and clicking enter:
-   ```
+   ```batch
    pip install pyqt5 pillow pyinstaller
    ```
 
@@ -43,7 +43,7 @@ Follow my Github: https://github.com/jpwaters09
    For Ubuntu / Debian Linux: \
    Download the code: [Comment Remover](https://github.com/Jpwaters09/Comment-Remover/archive/refs/heads/main.zip). \
    Unzip the file, then in terminal run:
-   ```batch
+   ```bash
    cd "Comment-Remover-main\Comment-Remover-main\Linux"
    ```
 
@@ -54,7 +54,7 @@ Follow my Github: https://github.com/jpwaters09
    ```
    
    For Ubuntu / Debian Linux, in terminal:
-   ```batch
+   ```bash
    chmod +x Compile.sh
    ./Compile.sh
    ```
@@ -70,6 +70,6 @@ Follow my Github: https://github.com/jpwaters09
    For Ubuntu / Debian Linux: \
    Double click on the file. \
    Or run in terminal:
-   ```batch
+   ```bash
    ./"dist/Comment Remover.exe"
    ```
