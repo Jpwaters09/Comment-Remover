@@ -6,6 +6,25 @@ Follow me for coding Tutorials / Projects.\
 If you have any project ideas or suggestions please contact me at jpwaters.github@gmail.com \
 Follow my Github: https://github.com/jpwaters09
 
+# Running from release:
+## For Windows: \
+Double click on the Comment_Remover-v1.1.0-Windows.exe file. \
+Or run in cmd:
+```batch
+./Comment_Remover-v1.1.0-Windows.exe
+```
+
+## For Linux: \
+Run in terminal:
+```bash
+chmod +x Comment_Remover-v1.1.0-Linux
+```
+Then double click on Comment_Remover-v1.1.0-Linux file. \
+Or run in terminal:
+```bash
+./Comment_Remover-v1.1.0-Linux
+```
+
 # Building:
 1. Install python: \
    For Windows (64-Bit): [Python 3.12.3](https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe) \
@@ -54,7 +73,7 @@ Follow my Github: https://github.com/jpwaters09
 
 6. Running the application: \
    For Windows: \
-   Double click on the Comment_Remover-Windows.exe file. \
+   Double click on the Comment_Remover-v1.1.0-Windows.exe file. \
    Or run in cmd:
    ```batch
    ./"dist/Comment_Remover-v1.1.0-Windows.exe"
