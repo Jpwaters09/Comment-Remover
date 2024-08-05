@@ -7,14 +7,14 @@ If you have any project ideas or suggestions please contact me at jpwaters.githu
 Follow my Github: https://github.com/jpwaters09
 
 # Running from release:
-## For Windows: \
+## For Windows: 
 Double click on the Comment_Remover-v1.1.0-Windows.exe file. \
 Or run in cmd:
 ```batch
 ./Comment_Remover-v1.1.0-Windows.exe
 ```
 
-## For Linux: \
+## For Linux: 
 Run in terminal:
 ```bash
 chmod +x Comment_Remover-v1.1.0-Linux
