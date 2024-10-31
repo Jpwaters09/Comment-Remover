@@ -83,6 +83,7 @@
    
    ```bash
    chmod +x Compile.sh
+
    ./Compile.sh
    ```
    
