@@ -36,5 +36,5 @@ As a user of Comment Remover, you retain full control over how the app interacts
   <li>Data Control: All file operations are performed locally on your device, ensuring that you maintain complete ownership and privacy over your data.</li>
 </ul>
   
-### 7. Contact Us
-If you have any questions, concerns, or feedback about this Privacy Policy, you can contact us at [jpwaters.github@gmail.com](mailto:jpwaters.github@gmail.com).
+### 7. Contact Me
+If you have any questions, concerns, or feedback about this Privacy Policy, you can contact me at [jpwaters.github@gmail.com](mailto:jpwaters.github@gmail.com).
