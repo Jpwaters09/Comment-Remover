@@ -1,108 +1,27 @@
 <div align="center">
-  <h1>Comment Remover</h1>
-  <p>Removes comments from Python, JavaScript, Java, C, C++, C#, Lua, and Asm.</p>
+<h1>Comment Remover</h1>
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="80" alt="C# Logo"/>
 </div>
 
 ##
 
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="80" alt="Python Logo"/>
-</div>
+<p>Quickly clean up your code by removing all comments across multiple languages.</p>
 
 ##
 
-<div align="center">
-   <h3>Running from release:</h3>
-   <p>For Windows:</p>
-   <p>Double click on the Comment_Remover-v1.1.0-Windows.exe file.</p>
-   <p>Or run in cmd:</p>
-   
-   ```batch
-   ./Comment_Remover-v1.1.0-Windows.exe
-   ```
-
-   <p>For Linux:</p>
-   <p>Run in terminal:</p>
-   
-   ```bash
-   chmod +x Comment_Remover-v1.1.0-Linux
-   ```
-
-   <p>Then double click on Comment_Remover-v1.1.0-Linux file.</p>
-   <p>Or run in terminal:</p>
-   
-   ```bash
-   ./Comment_Remover-v1.1.0-Linux
-   ```
 </div>
-
-##
-
-<div align="center">
-   <h3>Building:</h3>
-   <h4>1. Install required python packages:</h4>
-   <p>For Windows open the terminal by typing 'cmd' in the Windows search and clicking enter:</p>
-
-   ```batch
-   pip install pyqt5 pillow pyinstaller
-   ```
-
-   <p>For Ubuntu / Debian Linux open the terminal by typing 'terminal' in the search:</p>      
-   
-   ```bash
-   sudo apt update
-   sudo apt install python3-pip -y
-   pip install pyqt5 pyinstaller
-   ```
-   
-   <h4>2. Clone the repository:</h4>
-   <p>For Windows:</p>
-   <p>Download the code: <a href="https://github.com/Jpwaters09/Comment-Remover/archive/refs/heads/main.zip">Comment Remover</a></p>
-   <p>Unzip the file, then in cmd run:</p>
-   
-   ```batch
-   cd "Comment-Remover-main\Comment-Remover-main\Windows"
-   ```
-
-   <p>For Ubuntu / Debian Linux:</p>
-   <p>Download the code: <a href="https://github.com/Jpwaters09/Comment-Remover/archive/refs/heads/main.zip">Comment Remover</a></p>
-   <p>Unzip the file, then in terminal run:</p>
-   
-   ```bash
-   cd "Comment-Remover-main\Comment-Remover-main\Linux"
-   ```
-   
-   <h4>3. Build the application:</h4>
-   <p>For Windows, in cmd:</p>
-   
-   ```batch
-   ./Compile.bat
-   ```
-      
-   <p>For Ubuntu / Debian Linux, in terminal:</p>
-   
-   ```bash
-   chmod +x Compile.sh
-   ./Compile.sh
-   ```
-   
-   <h4>4. Running the application:</h4>
-   <p>For Windows:</p>
-   <p>Double click on the Comment_Remover-v1.1.0-Windows.exe file.</p>
-   <p>Or run in cmd:</p>
-   
-   ```batch
-   ./"dist/Comment_Remover-v1.1.0-Windows.exe"
-   ```
-
-   <p>For Ubuntu / Debian Linux:</p>
-   <p>Double click on the file.</p>
-   <p>Or run in terminal:</p>
-   
-   ```bash
-   ./"dist/Comment_Remover-v1.1.0-Linux"
-   ```
-</div>
+<p>Supported programming languages:</p>
+<ul>
+  <li>Python (#)</li>
+  <li>Java (//)</li>
+  <li>JavaScript (//)</li>
+  <li>C (//)</li>
+  <li>C++ (//)</li>
+  <li>C# (//)</li>
+  <li>ASM (;)</li>
+</ul>
 
 ##
 
