@@ -3,6 +3,7 @@
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="80" alt="C# Logo"/>
+  <img src="Images/Comment%20Remover%20Icon.png" height="80" alt="Comment Remover Icon"/>
 </div>
 
 ##
