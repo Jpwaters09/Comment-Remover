@@ -1,3 +1,12 @@
+////////////////////////////////////////////////
+// Comment Remover - MainWindow.xaml.cs       //
+// Language: C#                               //
+// Author: Jacob Waters                       //
+// Github: github.com/jpwaters09              //
+// Copyright (c) 2024 Jacob Waters            //
+// Contact me: jpwaters.github@gmail.com      //
+////////////////////////////////////////////////
+
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System;
