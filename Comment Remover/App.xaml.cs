@@ -8,7 +8,7 @@
 ////////////////////////////////////////////////
 
 using Microsoft.UI.Xaml;
-using Windows.Storage;
+using System;
 
 namespace Comment_Remover
 {
@@ -17,26 +17,11 @@ namespace Comment_Remover
         public App()
         {
             this.InitializeComponent();
+        }
 
-            object themeSetting = ApplicationData.Current.LocalSettings.Values["themeSetting"];
-
-            if (themeSetting != null)
-            {
-                if ((int)themeSetting == 1)
-                {
-                    App.Current.RequestedTheme = (ApplicationTheme)0;
-                }
-
-                if ((int)themeSetting == 2)
-                {
-                    App.Current.RequestedTheme = (ApplicationTheme)1;
-                }
-            }
-
-            else
-            {
-                ApplicationData.Current.LocalSettings.Values["themeSetting"] = 0;
-            }
+        public static TEnum GetEnum<TEnum>(string text) where TEnum : struct
+        {
+            return (TEnum)Enum.Parse(typeof(TEnum), text);
         }
 
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
