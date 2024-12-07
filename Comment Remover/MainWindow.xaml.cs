@@ -20,27 +20,78 @@ using Windows.Storage;
 using Microsoft.UI.Xaml.Media;
 using System.IO;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Media;
 
 namespace Comment_Remover
 {
     public sealed partial class MainWindow : Window
     {
+        static public List<Window> ActiveWindows { get { return _activeWindows; } }
+        static private List<Window> _activeWindows = new List<Window>();
+
+        public static ElementTheme RootTheme
+        {
+            get
+            {
+                foreach (Window window in ActiveWindows)
+                {
+                    if (window.Content is FrameworkElement rootElement)
+                    {
+                        return rootElement.RequestedTheme;
+                    }
+                }
+
+                return ElementTheme.Default;
+            }
+            set
+            {
+                foreach (Window window in ActiveWindows)
+                {
+                    if (window.Content is FrameworkElement rootElement)
+                    {
+                        rootElement.RequestedTheme = value;
+                    }
+                }
+
+                ApplicationData.Current.LocalSettings.Values["AppTheme"] = value.ToString();
+            }
+        }
+
         private static string CommentFile { get; set; }
-        private static string Language { get; set; }
-        public static bool SelectionChangedBlocker0 { get; set; } = false;
-        public static bool SelectionChangedBlocker1 { get; set; } = false;
+
+        private static bool CommentHT {  get; set; } = false;
+        private static bool CommentSS { get; set; } = false;
+        private static bool CommentSC { get; set; } = false;
+
+        public static bool SelectionChangedBlocker { get; set; } = false;
 
         public MainWindow()
         {
             this.InitializeComponent();
+            ActiveWindows.Add(this);
+
+            string savedTheme = ApplicationData.Current.LocalSettings.Values["AppTheme"]?.ToString();
+
+            if (savedTheme != null)
+            {
+                RootTheme = Comment_Remover.App.GetEnum<ElementTheme>(savedTheme);
+            }
 
             IntPtr hWnd = WindowNative.GetWindowHandle(this);
             WindowId wndId = Win32Interop.GetWindowIdFromWindow(hWnd);
             AppWindow appWindow = AppWindow.GetFromWindowId(wndId);
-            appWindow.SetIcon(@"Images\Comment Remover Icon.ico");
+            appWindow.SetIcon(@"Comment Remover Icon.ico");
 
             this.ExtendsContentIntoTitleBar = true;
             this.SetTitleBar(TitleBar);
+
+            UpdateTitleBarColors();
+
+            if (this.Content is FrameworkElement rootElement)
+            {
+                rootElement.ActualThemeChanged += RootElement_ActualThemeChanged;
+            }
 
             var packageVersion = Package.Current.Id.Version;
 
@@ -60,6 +111,43 @@ namespace Comment_Remover
             else
             {
                 ApplicationData.Current.LocalSettings.Values["backgroundSetting"] = 0;
+            }
+        }
+
+        private void RootElement_ActualThemeChanged(FrameworkElement sender, object args)
+        {
+            UpdateTitleBarColors();
+        }
+
+        private ElementTheme GetCurrentTheme()
+        {
+            if (this.Content is FrameworkElement rootElement)
+            {
+                return rootElement.ActualTheme;
+            }
+            return ElementTheme.Default;
+        }
+
+        public void UpdateTitleBarColors()
+        {
+            var theme = GetCurrentTheme();
+            var hwnd = WindowNative.GetWindowHandle(this);
+            var windowId = Win32Interop.GetWindowIdFromWindow(hwnd);
+            var appWindow = AppWindow.GetFromWindowId(windowId);
+
+            var titleBar = appWindow.TitleBar;
+
+            if (theme == ElementTheme.Dark)
+            {
+                titleBar.ButtonForegroundColor = Colors.White;
+            }
+            else if (theme == ElementTheme.Light)
+            {
+                titleBar.ButtonForegroundColor = Colors.Black;
+            }
+            else
+            {
+                titleBar.ButtonForegroundColor = null;
             }
         }
 
@@ -95,49 +183,65 @@ namespace Comment_Remover
                     case ".py":
                         LangText.Text = "Language: Python";
                         RemoveCommentBtn.IsEnabled = true;
-                        Language = "Python";
+                        CommentHT = true;
+                        CommentSS = false;
+                        CommentSC = false;
                         break;
 
                     case ".js":
                         LangText.Text = "Language: JavaScript";
                         RemoveCommentBtn.IsEnabled = true;
-                        Language = "JavaScript";
+                        CommentHT = false;
+                        CommentSS = true;
+                        CommentSC = false;
                         break;
 
                     case ".java":
                         LangText.Text = "Language: Java";
                         RemoveCommentBtn.IsEnabled = true;
-                        Language = "Java";
+                        CommentHT = false;
+                        CommentSS = true;
+                        CommentSC = false;
                         break;
 
                     case ".c":
                         LangText.Text = "Language: C";
                         RemoveCommentBtn.IsEnabled = true;
-                        Language = "C";
+                        CommentHT = false;
+                        CommentSS = true;
+                        CommentSC = false;
                         break;
 
                     case ".cpp":
                         LangText.Text = "Language: C++";
                         RemoveCommentBtn.IsEnabled = true;
-                        Language = "C++";
+                        CommentHT = false;
+                        CommentSS = true;
+                        CommentSC = false;
                         break;
 
                     case ".cs":
                         LangText.Text = "Language: C#";
                         RemoveCommentBtn.IsEnabled = true;
-                        Language = "C#";
+                        CommentHT = false;
+                        CommentSS = true;
+                        CommentSC = false;
                         break;
 
                     case ".asm":
                         LangText.Text = "Language: ASM";
                         RemoveCommentBtn.IsEnabled = true;
-                        Language = "ASM";
+                        CommentHT = false;
+                        CommentSS = false;
+                        CommentSC = true;
                         break;
 
                     case ".s":
                         LangText.Text = "Language: ASM";
                         RemoveCommentBtn.IsEnabled = true;
-                        Language = "ASM";
+                        CommentHT = false;
+                        CommentSS = false;
+                        CommentSC = true;
                         break;
                 }
             }
@@ -146,13 +250,17 @@ namespace Comment_Remover
             {
                 FilePathBox.Text = "";
                 LangText.Text = "Language: None";
-                Language = "";
+                CommentHT = false;
+                CommentSS = false;
+                CommentSC = false;
                 RemoveCommentBtn.IsEnabled = false;
             }
         }
 
         private async void ShowFinishedDialog()
         {
+            SystemSounds.Asterisk.Play();
+            
             ContentDialog FinishedDialog = new ContentDialog()
             {
                 Title = "Removed Comments!",
@@ -163,50 +271,10 @@ namespace Comment_Remover
             };
 
             await FinishedDialog.ShowAsync();
-
         }
 
         private async void RemoveComments(object sender, RoutedEventArgs e)
         {
-            bool CommentHT = false;
-            bool CommentSS = false;
-            bool CommentSC = false;
-
-            if (Language == "Python")
-            {
-                CommentHT = true;
-            }
-
-            if (Language == "JavaScript")
-            {
-                CommentSS = true;
-            }
-
-            if (Language == "Java")
-            {
-                CommentSS = true;
-            }
-
-            if (Language == "C")
-            {
-                CommentSS = true;
-            }
-
-            if (Language == "C++")
-            {
-                CommentSS = true;
-            }
-
-            if (Language == "C#")
-            {
-                CommentSS = true;
-            }
-
-            if (Language == "ASM")
-            {
-                CommentSC = true;
-            }
-
             static bool IsCharEscaped(string line, int index)
             {
                 int backslashes = 0;
@@ -260,31 +328,22 @@ namespace Comment_Remover
                                 InsideBacktick = !InsideBacktick;
                             }
 
-                            else if (CommentSS == true)
+                            else if (CommentSS && line[i] == '/' && line[i + 1] == '/' && !(InsideSingleQuote || InsideDoubleQuote || InsideBacktick))
                             {
-                                if (line[i] == '/' && line[i + 1] == '/' && !(InsideSingleQuote || InsideDoubleQuote || InsideBacktick))
-                                {
-                                    line = line.Substring(0, i).TrimEnd();
-                                    break;
-                                }
+                                line = line.Substring(0, i).TrimEnd();
+                                break;
                             }
 
-                            else if (CommentHT == true)
+                            else if (CommentHT && line[i] == '#' && !(InsideSingleQuote || InsideDoubleQuote || InsideBacktick))
                             {
-                                if (line[i] == '#' && !(InsideSingleQuote || InsideDoubleQuote || InsideBacktick))
-                                {
-                                    line = line.Substring(0, i).TrimEnd();
-                                    break;
-                                }
+                                line = line.Substring(0, i).TrimEnd();
+                                break;
                             }
 
-                            else if (CommentSC == true)
+                            else if (CommentSC && line[i] == ';' && !(InsideSingleQuote || InsideDoubleQuote || InsideBacktick))
                             {
-                                if (line[i] == ';' && !(InsideSingleQuote || InsideDoubleQuote || InsideBacktick))
-                                {
-                                    line = line.Substring(0, i).TrimEnd();
-                                    break;
-                                }
+                                line = line.Substring(0, i).TrimEnd();
+                                break;
                             }
 
                             i++;
@@ -331,7 +390,7 @@ namespace Comment_Remover
             ProgressContainer.Visibility = Visibility.Collapsed;
 
             progressBar.Value = 0;
-            progress.Text = $"0%";
+            progress.Text = "0%";
             FileSelect.IsEnabled = true;
             ShowFinishedDialog();
         }
@@ -365,61 +424,36 @@ namespace Comment_Remover
 
         private void ChangeTheme(object sender, RoutedEventArgs e)
         {
-            if (SelectionChangedBlocker0)
+            var selectedTheme = ((ComboBoxItem)ThemeSelector.SelectedItem)?.Tag?.ToString();
+
+            if (selectedTheme != null)
             {
-                SelectionChangedBlocker0 = false;
-            }
-
-            else
-            {
-                if (ThemeSelector.SelectedIndex == 0)
-                {
-                    ApplicationData.Current.LocalSettings.Values["themeSetting"] = 0;
-                }
-
-                if (ThemeSelector.SelectedIndex == 1)
-                {
-                    ApplicationData.Current.LocalSettings.Values["themeSetting"] = 1;
-                }
-
-                if (ThemeSelector.SelectedIndex == 2)
-                {
-                    ApplicationData.Current.LocalSettings.Values["themeSetting"] = 2;
-                }
-
-                RestartBar.IsOpen = true;
-                SelectionChangedBlocker0 = false;
+                RootTheme = App.GetEnum<ElementTheme>(selectedTheme);
             }
         }
 
         private void ThemeSelecterLoaded(object sender, RoutedEventArgs e)
         {
-            SelectionChangedBlocker0 = true;
-
-            object themeSetting = ApplicationData.Current.LocalSettings.Values["themeSetting"];
-
-            if ((int)themeSetting == 0)
+            var currentTheme = RootTheme;
+            switch (currentTheme)
             {
-                ThemeSelector.SelectedIndex = 0;
-            }
-
-            else
-            {
-                if (App.Current.RequestedTheme == ApplicationTheme.Light)
-                {
+                case ElementTheme.Light:
                     ThemeSelector.SelectedIndex = 1;
-                }
+                    break;
 
-                if (App.Current.RequestedTheme == ApplicationTheme.Dark)
-                {
+                case ElementTheme.Dark:
                     ThemeSelector.SelectedIndex = 2;
-                }
+                    break;
+
+                case ElementTheme.Default:
+                    ThemeSelector.SelectedIndex = 0;
+                    break;
             }
         }
 
         private void BackgroundSelecterLoaded(object sender, RoutedEventArgs e)
         {
-            SelectionChangedBlocker1 = true;
+            SelectionChangedBlocker = true;
 
             object backgroundSetting = ApplicationData.Current.LocalSettings.Values["backgroundSetting"];
 
@@ -428,9 +462,9 @@ namespace Comment_Remover
 
         private void ChangeBackground(object sender, RoutedEventArgs e)
         {
-            if (SelectionChangedBlocker1)
+            if (SelectionChangedBlocker)
             {
-                SelectionChangedBlocker1 = false;
+                SelectionChangedBlocker = false;
             }
 
             else
