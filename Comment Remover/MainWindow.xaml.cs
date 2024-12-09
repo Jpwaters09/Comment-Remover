@@ -78,11 +78,6 @@ namespace Comment_Remover
                 RootTheme = Comment_Remover.App.GetEnum<ElementTheme>(savedTheme);
             }
 
-            IntPtr hWnd = WindowNative.GetWindowHandle(this);
-            WindowId wndId = Win32Interop.GetWindowIdFromWindow(hWnd);
-            AppWindow appWindow = AppWindow.GetFromWindowId(wndId);
-            appWindow.SetIcon(@"Comment Remover Icon.ico");
-
             this.ExtendsContentIntoTitleBar = true;
             this.SetTitleBar(TitleBar);
 
