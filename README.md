@@ -7,6 +7,16 @@
 
 ##
 
+<div align="center">
+  <img src="Images/Light Mode.png" height="100"/>
+  <img src="Images/Light Mode Settings.png" height="100"/>
+  <img src="Images/Dark Mode.png" height="100"/>
+  <img src="Images/Dark Mode Settings.png" height="100"/>
+  <img src="Images/Dark Mode Settings Acrylic.png" height="100"/>
+</div>
+
+##
+
 <p>Quickly clean up your code by removing all comments across multiple languages.</p>
 
 ##
