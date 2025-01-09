@@ -17,7 +17,7 @@
 
 ##
 
-<p>Quickly clean up your code by removing all comments across multiple languages.</p>
+<p>Quickly clean up your code by removing all comments across multiple programming languages.</p>
 
 ##
 
