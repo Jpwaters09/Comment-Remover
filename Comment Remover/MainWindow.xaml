@@ -84,7 +84,7 @@
 
                 <StackPanel Margin="0, 6, 0, 0" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
                     <TextBlock Text="Copyright:" Margin="0, 0, 5, 0" HorizontalAlignment="Center" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/>
-                    <TextBlock Text="Copyright © 2024 Jacob Waters" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Copyright © 2025 Jacob Waters" HorizontalAlignment="Center"/>
                 </StackPanel>
 
                 <StackPanel Margin="0, 6, 0, 0" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
