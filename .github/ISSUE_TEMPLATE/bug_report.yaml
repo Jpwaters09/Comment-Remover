@@ -1,0 +1,20 @@
+name: Bug report
+description: File a bug report
+title: "[BUG]"
+labels: bug
+
+body:
+  - type: textarea
+  attributes:
+    label: Description
+    description: Please provide a description of the bug and how to reproduce it.
+
+  - type: textarea
+  attributes:
+    label: Screenshots
+    description: If applicable, add screenshots here to help explain your problem.
+
+  - type: textarea
+  attributes:
+    label: Additional Context
+    description: Enter any other applicable info here.
