@@ -1,0 +1,36 @@
+<!----------------------------------------------
+-- Comment Remover - HomePage.xaml            --
+-- Language: XAML                             --
+-- Author: Jacob Waters                       --
+-- Github: github.com/jpwaters09              --
+-- Copyright (c) 2025 Jacob Waters            --
+-- Contact me: jpwaters.github@gmail.com      --
+----------------------------------------------->
+
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Comment_Remover.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Comment_Remover"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Padding="36, 0, 36, 0">
+        <TextBlock Text="Comment Remover" Margin="0, 40, 0, 36" Style="{ThemeResource TitleTextBlockStyle}"/>
+        <TextBlock x:Name="LangText" Style="{ThemeResource BodyTextBlockStyle}" Text="Language: None" Margin="0, 0, 0, 12"/>
+        <TextBox x:Name="FilePathBox" IsReadOnly="True" PlaceholderText="File Path:" Margin="0, 0, 0, 12"/>
+        <Button x:Name="FileSelect" Content="Open File" Click="OpenFile" Margin="0, 0, 0, 24"/>
+        <Button x:Name="RemoveCommentBtn" IsEnabled="False" Content="Remove Comments" Click="RemoveComments" Margin="0, 0, 0, 16"/>
+        <Grid x:Name="ProgressContainer" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <ProgressBar x:Name="progressBar" Value="0" Grid.Column="0"/>
+            <TextBlock x:Name="progress" Text="0%" Margin="5,0,0,0" Grid.Column="1"/>
+        </Grid>
+    </StackPanel>
+</Page>
