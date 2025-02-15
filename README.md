@@ -23,13 +23,14 @@
 </div>
 <p>Supported programming languages:</p>
 <ul>
-  <li>Python (#)</li>
-  <li>Java (//)</li>
-  <li>JavaScript (//)</li>
-  <li>C (//)</li>
-  <li>C++ (//)</li>
-  <li>C# (//)</li>
-  <li>ASM (;)</li>
+  <li>Python</li>
+  <li>Java</li>
+  <li>JavaScript</li>
+  <li>C</li>
+  <li>C++</li>
+  <li>C#</li>
+  <li>ASM</li>
+  <li>Lua</li>
 </ul>
 
 ##
