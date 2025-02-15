@@ -2,17 +2,16 @@
 <h1>Comment Remover</h1>
 
 <div align="center">
-  <img src="Images/Comment%20Remover%20Icon.png" height="80" alt="Comment Remover Icon"/>
+  <img src="Images/Comment%20Remover%20Logo.png" height="80" alt="Comment Remover Logo"/>
 </div>
 
 ##
 
 <div align="center">
-  <img src="Images/Light Mode.png" height="100"/>
-  <img src="Images/Light Mode Settings.png" height="100"/>
-  <img src="Images/Dark Mode.png" height="100"/>
-  <img src="Images/Dark Mode Settings.png" height="100"/>
-  <img src="Images/Dark Mode Settings Acrylic.png" height="100"/>
+  <img src="Images/Light - Home.png" height="100"/>
+  <img src="Images/Light - Settings.png" height="100"/>
+  <img src="Images/Dark - Home.png" height="100"/>
+  <img src="Images/Dark - Settings.png" height="100"/>
 </div>
 
 ##
