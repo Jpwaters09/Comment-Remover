@@ -56,42 +56,6 @@
                 </Border>
 
                 <TextBlock Text="About" Margin="0, 32, 0, 12" Style="{ThemeResource BodyStrongTextBlockStyle}"/>
-                <!--<controls:SettingsExpander Header="Comment Remover" Description="© 2025 Jacob Waters." IsExpanded="True">
-                    <controls:SettingsExpander.HeaderIcon>
-                        <BitmapIcon ShowAsMonochrome="False" UriSource="ms-appx:///Images/Comment Remover Logo.png"/>
-                    </controls:SettingsExpander.HeaderIcon>
-
-                    <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" x:Name="VersionText"/>
-
-                    <controls:SettingsExpander.Items>
-                        <controls:SettingsCard Header="Author">
-                            <TextBlock Text="Jacob Waters"/>
-                        </controls:SettingsCard>
-
-                        <controls:SettingsCard Header="File a bug or request" IsClickEnabled="True" Click="FileBugOrRequest">
-                            <controls:SettingsCard.ActionIcon>
-                                <FontIcon Glyph="&#xE8A7;"/>
-                            </controls:SettingsCard.ActionIcon>
-                        </controls:SettingsCard>
-
-                        <controls:SettingsCard Header="Contact me" IsClickEnabled="True" Click="SendEmail">
-                            <controls:SettingsCard.ActionIcon>
-                                <FontIcon Glyph="&#xE8A7;"/>
-                            </controls:SettingsCard.ActionIcon>
-                        </controls:SettingsCard>
-
-                        <controls:SettingsCard Header="Links &amp; socials" HorizontalContentAlignment="Left" ContentAlignment="Vertical">
-                            <StackPanel Margin="-12,0,0,0" Orientation="Vertical">
-                                <HyperlinkButton Content="Licence" NavigateUri="https://github.com/Jpwaters09/Comment-Remover/blob/main/LICENSE"/>
-                                <HyperlinkButton Content="Privacy Policy" NavigateUri="https://github.com/Jpwaters09/Comment-Remover/blob/main/Privacy%20Policy.md"/>
-                                <HyperlinkButton Content="Source Code" NavigateUri="https://github.com/jpwaters09/Comment-Remover"/>
-                                <HyperlinkButton Content="GitHub" NavigateUri="https://github.com/jpwaters09"/>
-                                <HyperlinkButton Content="Patreon" NavigateUri="https://patreon.com/Jpwaters09"/>
-                                <HyperlinkButton Content="PayPal" NavigateUri="https://paypal.me/JacobW120"/>
-                            </StackPanel>
-                        </controls:SettingsCard>
-                    </controls:SettingsExpander.Items>
-                </controls:SettingsExpander>-->
 
                 <Expander HorizontalContentAlignment="Stretch" IsExpanded="True" ExpandDirection="Down" HorizontalAlignment="Stretch" Padding="0">
                     <Expander.Header>
