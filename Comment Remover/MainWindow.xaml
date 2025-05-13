@@ -33,7 +33,7 @@
 
         <NavigationView PaneDisplayMode="Top" IsBackButtonVisible="Collapsed" SelectionChanged="NavBarSelectionChanged" x:Name="NavBar" Margin="0, 40, 0, 0">
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Home" Content="Home" Tag="HomePage" FocusVisualPrimaryBrush="Transparent" FocusVisualSecondaryBrush="Transparent"/>
+                <NavigationViewItem Icon="Home" ToolTipService.ToolTip="Home" Content="Home" Tag="HomePage" FocusVisualPrimaryBrush="Transparent" FocusVisualSecondaryBrush="Transparent"/>
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame"/>
         </NavigationView>
