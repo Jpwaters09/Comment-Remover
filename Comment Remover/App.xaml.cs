@@ -4,7 +4,7 @@
 // Author: Jacob Waters                       //
 // Github: github.com/jpwaters09              //
 // Copyright (c) 2025 Jacob Waters            //
-// Contact me: jpwaters.github@gmail.com      //
+// Contact me: jpwaters09.business@gmail.com  //
 ////////////////////////////////////////////////
 
 using System;
