@@ -4,7 +4,7 @@
 // Author: Jacob Waters                       //
 // Github: github.com/jpwaters09              //
 // Copyright (c) 2025 Jacob Waters            //
-// Contact me: jpwaters.github@gmail.com      //
+// Contact me: jpwaters09.business@gmail.com  //
 ////////////////////////////////////////////////
 
 using System;
@@ -26,6 +26,7 @@ namespace Comment_Remover
         private static bool CommentSS { get; set; } = false;
         private static bool CommentSC { get; set; } = false;
         private static bool CommentHH { get; set; } = false;
+        private static bool CommentCC { get; set; } = false;
 
         public HomePage()
         {
@@ -50,6 +51,12 @@ namespace Comment_Remover
             openPicker.FileTypeFilter.Add(".asm");
             openPicker.FileTypeFilter.Add(".S");
             openPicker.FileTypeFilter.Add(".lua");
+            openPicker.FileTypeFilter.Add(".sh");
+            openPicker.FileTypeFilter.Add(".bat");
+            openPicker.FileTypeFilter.Add(".go");
+            openPicker.FileTypeFilter.Add(".rs");
+            openPicker.FileTypeFilter.Add(".rb");
+            openPicker.FileTypeFilter.Add(".swift");
 
             var file = await openPicker.PickSingleFileAsync();
 
@@ -69,6 +76,7 @@ namespace Comment_Remover
                         CommentSS = false;
                         CommentSC = false;
                         CommentHH = false;
+                        CommentCC = false;
                         break;
 
                     case ".js":
@@ -78,6 +86,7 @@ namespace Comment_Remover
                         CommentSS = true;
                         CommentSC = false;
                         CommentHH = false;
+                        CommentCC = false;
                         break;
 
                     case ".java":
@@ -87,6 +96,7 @@ namespace Comment_Remover
                         CommentSS = true;
                         CommentSC = false;
                         CommentHH = false;
+                        CommentCC = false;
                         break;
 
                     case ".c":
@@ -96,6 +106,7 @@ namespace Comment_Remover
                         CommentSS = true;
                         CommentSC = false;
                         CommentHH = false;
+                        CommentCC = false;
                         break;
 
                     case ".cpp":
@@ -105,6 +116,7 @@ namespace Comment_Remover
                         CommentSS = true;
                         CommentSC = false;
                         CommentHH = false;
+                        CommentCC = false;
                         break;
 
                     case ".cs":
@@ -114,6 +126,7 @@ namespace Comment_Remover
                         CommentSS = true;
                         CommentSC = false;
                         CommentHH = false;
+                        CommentCC = false;
                         break;
 
                     case ".asm":
@@ -123,6 +136,7 @@ namespace Comment_Remover
                         CommentSS = false;
                         CommentSC = true;
                         CommentHH = false;
+                        CommentCC = false;
                         break;
 
                     case ".s":
@@ -132,6 +146,7 @@ namespace Comment_Remover
                         CommentSS = false;
                         CommentSC = true;
                         CommentHH = false;
+                        CommentCC = false;
                         break;
 
                     case ".lua":
@@ -141,6 +156,67 @@ namespace Comment_Remover
                         CommentSS = false;
                         CommentSC = false;
                         CommentHH = true;
+                        CommentCC = false;
+                        break;
+
+                    case ".sh":
+                        LangText.Text = "Language: Shell";
+                        RemoveCommentBtn.IsEnabled = true;
+                        CommentHT = true;
+                        CommentSS = false;
+                        CommentSC = false;
+                        CommentHH = false;
+                        CommentCC = false;
+                        break;
+
+                    case ".bat":
+                        LangText.Text = "Language: Batch";
+                        RemoveCommentBtn.IsEnabled = true;
+                        CommentHT = false;
+                        CommentSS = false;
+                        CommentSC = false;
+                        CommentHH = false;
+                        CommentCC = true;
+                        break;
+
+                    case ".go":
+                        LangText.Text = "Language: Go";
+                        RemoveCommentBtn.IsEnabled = true;
+                        CommentHT = false;
+                        CommentSS = true;
+                        CommentSC = false;
+                        CommentHH = false;
+                        CommentCC = false;
+                        break;
+
+                    case ".rs":
+                        LangText.Text = "Language: Rust";
+                        RemoveCommentBtn.IsEnabled = true;
+                        CommentHT = false;
+                        CommentSS = true;
+                        CommentSC = false;
+                        CommentHH = false;
+                        CommentCC = false;
+                        break;
+
+                    case ".rb":
+                        LangText.Text = "Language: Ruby";
+                        RemoveCommentBtn.IsEnabled = true;
+                        CommentHT = true;
+                        CommentSS = false;
+                        CommentSC = false;
+                        CommentHH = false;
+                        CommentCC = false;
+                        break;
+
+                    case ".swift":
+                        LangText.Text = "Language: Swift";
+                        RemoveCommentBtn.IsEnabled = true;
+                        CommentHT = false;
+                        CommentSS = true;
+                        CommentSC = false;
+                        CommentHH = false;
+                        CommentCC = false;
                         break;
                 }
             }
@@ -153,6 +229,7 @@ namespace Comment_Remover
                 CommentSS = false;
                 CommentSC = false;
                 CommentHH = false;
+                CommentCC = false;
                 RemoveCommentBtn.IsEnabled = false;
             }
         }
@@ -163,7 +240,7 @@ namespace Comment_Remover
 
             ContentDialog FinishedDialog = new ContentDialog()
             {
-                Title = "Removed Comments!",
+                Title = "Removed Comments",
                 CloseButtonText = "Ok",
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
@@ -252,6 +329,12 @@ namespace Comment_Remover
                                 break;
                             }
 
+                            else if (CommentCC && line[i] == ':' && line[i + 1] == ':' && !(InsideSingleQuote || InsideDoubleQuote || InsideBacktick))
+                            {
+                                line = line.Substring(0, i).TrimEnd();
+                                break;
+                            }
+
                             i++;
                         }
 
@@ -298,6 +381,8 @@ namespace Comment_Remover
             progressBar.Value = 0;
             progress.Text = "0%";
             FileSelect.IsEnabled = true;
+            LangText.Text = "Language: None";
+            FilePathBox.Text = "";
             ShowFinishedDialog();
         }
     }
