@@ -4,7 +4,7 @@
 -- Author: Jacob Waters                       --
 -- Github: github.com/jpwaters09              --
 -- Copyright (c) 2025 Jacob Waters            --
--- Contact me: jpwaters.github@gmail.com      --
+-- Contact me: jpwaters09.business@gmail.com  --
 ----------------------------------------------->
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -57,7 +57,7 @@
 
                 <TextBlock Text="About" Margin="0, 32, 0, 12" Style="{ThemeResource BodyStrongTextBlockStyle}"/>
 
-                <Expander HorizontalContentAlignment="Stretch" IsExpanded="True" ExpandDirection="Down" HorizontalAlignment="Stretch" Padding="0">
+                <Expander Background="Transparent" HorizontalContentAlignment="Stretch" IsExpanded="True" ExpandDirection="Down" HorizontalAlignment="Stretch" Padding="0" Margin="0 0 0 24">
                     <Expander.Header>
                         <Grid Padding="0, 16">
                             <Grid.ColumnDefinitions>
@@ -81,7 +81,7 @@
 
                     <Expander.Content>
                         <StackPanel Orientation="Vertical">
-                            <Border Margin="0" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Padding="16" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Margin="0" Padding="16" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
                                 <Grid Margin="40, 0, 40, 0">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
@@ -89,7 +89,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <StackPanel VerticalAlignment="Center" Orientation="Vertical" Grid.Column="0">
-                                        <TextBlock Text="Author"/>
+                                        <TextBlock Text="Developer"/>
                                     </StackPanel>
 
                                     <StackPanel VerticalAlignment="Center" Orientation="Vertical" Grid.Column="1">
@@ -98,7 +98,7 @@
                                 </Grid>
                             </Border>
 
-                            <Button Click="FileBugOrRequest" HorizontalContentAlignment="Stretch" CornerRadius="0" HorizontalAlignment="Stretch" Margin="0" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Padding="16" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                            <Button Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Click="FileBugOrRequest" HorizontalContentAlignment="Stretch" CornerRadius="0" HorizontalAlignment="Stretch" Margin="0" Padding="16" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
                                 <Grid Margin="40, 0, 0, 0">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
@@ -115,7 +115,7 @@
                                 </Grid>
                             </Button>
 
-                            <Button Click="SendEmail" HorizontalContentAlignment="Stretch" CornerRadius="0" HorizontalAlignment="Stretch" Margin="0" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Padding="16" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                            <Button Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Click="SendEmail" HorizontalContentAlignment="Stretch" CornerRadius="0" HorizontalAlignment="Stretch" Margin="0" Padding="16" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
                                 <Grid Margin="40, 0, 0, 0">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
@@ -132,7 +132,7 @@
                                 </Grid>
                             </Button>
 
-                            <Border Margin="0" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Padding="16" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" Margin="0" Padding="16" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
                                 <Grid Margin="40, 0, 40, 0">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
@@ -143,10 +143,12 @@
                                         </StackPanel>
 
                                         <StackPanel Margin="-12, 0, 0, 0" VerticalAlignment="Center" Orientation="Vertical">
+                                            <HyperlinkButton Content="Website" NavigateUri="https://Jpwaters09.github.io"/>
                                             <HyperlinkButton Content="Licence" NavigateUri="https://github.com/Jpwaters09/Comment-Remover/blob/main/LICENSE"/>
                                             <HyperlinkButton Content="Privacy Policy" NavigateUri="https://github.com/Jpwaters09/Comment-Remover/blob/main/Privacy%20Policy.md"/>
-                                            <HyperlinkButton Content="Source Code" NavigateUri="https://github.com/jpwaters09/Comment-Remover"/>
-                                            <HyperlinkButton Content="GitHub" NavigateUri="https://github.com/jpwaters09"/>
+                                            <HyperlinkButton Content="Source Code" NavigateUri="https://github.com/Jpwaters09/Comment-Remover"/>
+                                            <HyperlinkButton Content="GitHub" NavigateUri="https://github.com/Jpwaters09"/>
+                                            <HyperlinkButton Content="X" NavigateUri="https://x.com/Jpwaters09"/>
                                             <HyperlinkButton Content="Patreon" NavigateUri="https://patreon.com/Jpwaters09"/>
                                             <HyperlinkButton Content="PayPal" NavigateUri="https://paypal.me/JacobW120"/>
                                         </StackPanel>
