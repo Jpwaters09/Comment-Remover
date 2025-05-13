@@ -31,6 +31,12 @@
   <li>C#</li>
   <li>ASM</li>
   <li>Lua</li>
+  <li>Shell</li>
+  <li>Batch</li>
+  <li>Go</li>
+  <li>Rust</li>
+  <li>Ruby</li>
+  <li>Swift</li>
 </ul>
 
 ##
