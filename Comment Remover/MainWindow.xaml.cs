@@ -1,12 +1,3 @@
-////////////////////////////////////////////////
-// Comment Remover - MainWindow.xaml.cs       //
-// Language: C#                               //
-// Author: Jacob Waters                       //
-// Github: github.com/jpwaters09              //
-// Copyright (c) 2025 Jacob Waters            //
-// Contact me: jpwaters09.business@gmail.com  //
-////////////////////////////////////////////////
-
 using Microsoft.UI.Xaml;
 using WinRT.Interop;
 using Microsoft.UI;
@@ -36,6 +27,7 @@ namespace Comment_Remover
 
             this.ExtendsContentIntoTitleBar = true;
             this.SetTitleBar(TitleBar);
+            this.AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Tall;
 
             UpdateTitleBarColors();
 
@@ -46,10 +38,6 @@ namespace Comment_Remover
 
             ContentFrame.Navigate(typeof(HomePage));
             NavBar.SelectedItem = NavBar.MenuItems[0];
-
-            var packageVersion = Package.Current.Id.Version;
-
-            VersionText.Text = $"v{packageVersion.Major}.{packageVersion.Minor}.{packageVersion.Build}";
         }
 
         private void RootElement_ActualThemeChanged(FrameworkElement sender, object args)

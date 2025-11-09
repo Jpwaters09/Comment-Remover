@@ -42,19 +42,6 @@
 ##
 
 <div align="center">
-  <h3>Repositories:</h3>
-
-  <a href="https://github.com/Jpwaters09/Raspberry-Pi-Projects"><img src="https://img.shields.io/badge/Raspberry%20Pi%20Projects-Raspberry%20Pi%20Projects?logo=python&logoColor=white&labelColor=3776AB&color=grey" alt="Raspberry Pi Projects" height="30"/></a>
-  <a href="https://github.com/Jpwaters09/HTML-Projects"><img src="https://img.shields.io/badge/HTML%20Projects-HTML%20Projects?logo=HTML5&logoColor=white&labelColor=E34F26&color=grey" alt="HTML Projects" height="30"/></a>
-  <a href="https://github.com/Jpwaters09/Python-Projects"><img src="https://img.shields.io/badge/Python%20Projects-Python%20Projects?logo=python&logoColor=white&labelColor=3776AB&color=grey" alt="Python Projects" height="30"/></a>
-  <a href="https://github.com/Jpwaters09/CPP-Projects"><img src="https://img.shields.io/badge/C++%20Projects-C++%20Projects?logo=C%2B%2B&logoColor=white&labelColor=00599C&color=grey" alt="C++ Projects" height="30"/></a>
-  <a href="https://github.com/Jpwaters09/Comment-Remover"><img src="https://img.shields.io/badge/Comment%20Remover-Comment%20Remover?logo=python&logoColor=white&labelColor=3776AB&color=grey" alt="Comment Remover" height="30"/></a>
-  <a href="https://github.com/Jpwaters09/CS-Projects"><img src="https://img.shields.io/badge/C%23%20Projects-C%23%20Projects?logo=c&logoColor=white&labelColor=8849d6&color=grey" alt="C# Projects" height="30"/></a>
-</div>
-
-##
-
-<div align="center">
   <h3>Socials:</h3>
   
   <a href="mailto:jpwaters09.business@gmail.com"><img margin-right="10px" src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&style=flat" height="40" alt="Gmail Logo"/></a>

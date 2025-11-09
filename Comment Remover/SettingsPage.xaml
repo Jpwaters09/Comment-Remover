@@ -1,12 +1,3 @@
-<!----------------------------------------------
--- Comment Remover - SettingsPage.xaml        --
--- Language: XAML                             --
--- Author: Jacob Waters                       --
--- Github: github.com/jpwaters09              --
--- Copyright (c) 2025 Jacob Waters            --
--- Contact me: jpwaters09.business@gmail.com  --
------------------------------------------------>
-
 <?xml version="1.0" encoding="utf-8"?>
 <Page
     x:Class="Comment_Remover.SettingsPage"
@@ -148,6 +139,7 @@
                                             <HyperlinkButton Content="Privacy Policy" NavigateUri="https://github.com/Jpwaters09/Comment-Remover/blob/main/Privacy%20Policy.md"/>
                                             <HyperlinkButton Content="Source Code" NavigateUri="https://github.com/Jpwaters09/Comment-Remover"/>
                                             <HyperlinkButton Content="GitHub" NavigateUri="https://github.com/Jpwaters09"/>
+                                            <HyperlinkButton Content="LinkedIn" NavigateUri="https://linkedin.com/in/Jpwaters09"/>
                                             <HyperlinkButton Content="X" NavigateUri="https://x.com/Jpwaters09"/>
                                             <HyperlinkButton Content="Patreon" NavigateUri="https://patreon.com/Jpwaters09"/>
                                             <HyperlinkButton Content="PayPal" NavigateUri="https://paypal.me/JacobW120"/>

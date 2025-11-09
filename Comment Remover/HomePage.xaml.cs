@@ -1,12 +1,3 @@
-////////////////////////////////////////////////
-// Comment Remover - HomePage.xaml.cs         //
-// Language: C#                               //
-// Author: Jacob Waters                       //
-// Github: github.com/jpwaters09              //
-// Copyright (c) 2025 Jacob Waters            //
-// Contact me: jpwaters09.business@gmail.com  //
-////////////////////////////////////////////////
-
 using System;
 using System.IO;
 using Microsoft.UI.Xaml;

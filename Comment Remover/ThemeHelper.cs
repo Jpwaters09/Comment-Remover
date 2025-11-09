@@ -1,13 +1,4 @@
-////////////////////////////////////////////////
-// Comment Remover - ThemeHelper.cs           //
-// Language: C#                               //
-// Author: Jacob Waters                       //
-// Github: github.com/jpwaters09              //
-// Copyright (c) 2025 Jacob Waters            //
-// Contact me: jpwaters09.business@gmail.com  //
-////////////////////////////////////////////////
-
-using Microsoft.UI.Xaml;
+﻿using Microsoft.UI.Xaml;
 using System.Collections.Generic;
 using Windows.Storage;
 
