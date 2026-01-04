@@ -63,7 +63,7 @@
 
                             <StackPanel VerticalAlignment="Center" Orientation="Vertical" Grid.Column="1">
                                 <TextBlock Text="Comment Remover"/>
-                                <TextBlock Text="© 2025 Jacob Waters." Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"/>
+                                <TextBlock Text="© 2026 Jacob Waters." Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"/>
                             </StackPanel>
 
                             <TextBlock x:Name="VersionText" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"/>
