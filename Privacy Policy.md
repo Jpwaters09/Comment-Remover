@@ -37,4 +37,4 @@ As a user of Comment Remover, you retain full control over how the app interacts
 </ul>
   
 ### 7. Contact Me
-If you have any questions, concerns, or feedback about this Privacy Policy, you can contact me at [contact.jpwaters09@gmail.com](mailto:contact.jpwaters09@gmail.com).
+If you have any questions, concerns, or feedback about this Privacy Policy, you can contact me at [jacob@jpwaters09.com](mailto:jacob@jpwaters09.com).
