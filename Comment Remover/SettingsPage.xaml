@@ -134,15 +134,16 @@
                                         </StackPanel>
 
                                         <StackPanel Margin="-12, 0, 0, 0" VerticalAlignment="Center" Orientation="Vertical">
-                                            <HyperlinkButton Content="Website" NavigateUri="https://Jpwaters09.github.io"/>
+                                            <HyperlinkButton Content="Website" NavigateUri="https://jpwaters09.com"/>
                                             <HyperlinkButton Content="Licence" NavigateUri="https://github.com/Jpwaters09/Comment-Remover/blob/main/LICENSE"/>
                                             <HyperlinkButton Content="Privacy Policy" NavigateUri="https://github.com/Jpwaters09/Comment-Remover/blob/main/Privacy%20Policy.md"/>
                                             <HyperlinkButton Content="Source Code" NavigateUri="https://github.com/Jpwaters09/Comment-Remover"/>
                                             <HyperlinkButton Content="GitHub" NavigateUri="https://github.com/Jpwaters09"/>
-                                            <HyperlinkButton Content="LinkedIn" NavigateUri="https://linkedin.com/in/Jpwaters09"/>
                                             <HyperlinkButton Content="X" NavigateUri="https://x.com/Jpwaters09"/>
+                                            <HyperlinkButton Content="Instagram" NavigateUri="https://instagram.com/Jpwaters09"/>
+                                            <HyperlinkButton Content="Reddit" NavigateUri="https://reddit.com/u/Jpwaters09"/>
                                             <HyperlinkButton Content="Patreon" NavigateUri="https://patreon.com/Jpwaters09"/>
-                                            <HyperlinkButton Content="PayPal" NavigateUri="https://paypal.me/JacobW120"/>
+                                            <HyperlinkButton Content="LinkedIn" NavigateUri="https://linkedin.com/in/Jpwaters09"/>
                                         </StackPanel>
                                     </StackPanel>
                                 </Grid>

@@ -41,7 +41,7 @@ namespace Comment_Remover
 
         private async void SendEmail(object sender, RoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("mailto:jpwaters09.business@gmail.com"));
+            await Launcher.LaunchUriAsync(new Uri("mailto:jacob@jpwaters09.com"));
         }
 
         private async void FileBugOrRequest(object sender, RoutedEventArgs e)
