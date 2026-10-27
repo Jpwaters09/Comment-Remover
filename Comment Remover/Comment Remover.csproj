@@ -59,7 +59,7 @@
     <ApplicationIcon>Comment Remover Logo.ico</ApplicationIcon>
     <Title>Comment Remover</Title>
     <Description>Quickly clean up your code by removing all comments across multiple languages.</Description>
-    <Copyright>Copyright © 2026 Jacob Waters</Copyright>
+    <Copyright>Copyright © 2026 Jacob Waters. All rights reserved.</Copyright>
     <PackageIcon>Comment Remover Logo.png</PackageIcon>
     <NeutralLanguage>en-GB</NeutralLanguage>
     <StartupObject>Comment_Remover.Program</StartupObject>
